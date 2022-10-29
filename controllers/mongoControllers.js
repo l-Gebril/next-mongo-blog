@@ -6,7 +6,7 @@ export async function findDocs(collection) {
     const result = await collection.find({}).sort({ createdAt: -1 });
     return { docs: result };
   } catch (err) {
-    return { error: err.message };
+    return { errors: err.message };
   }
 }
 export async function findDoc(collection, doc) {
@@ -14,7 +14,7 @@ export async function findDoc(collection, doc) {
     const result = await collection.findById(doc);
     return { doc: result };
   } catch (err) {
-    return { error: err.message };
+    return { errors: err.message };
   }
 }
 // POST
@@ -25,7 +25,7 @@ export async function createDoc(collection, doc) {
       message: result
     };
   } catch (err) {
-    return { error: err.message };
+    return { errors: err.message };
   }
 }
 
@@ -40,7 +40,7 @@ export async function updateDoc(collection, id, doc) {
       message: result? 'Updated Successfully': 'Error, Try again later.',
     };
   } catch (err) {
-    return { error: err.message };
+    return { errors: err.message };
   }
 }
 
@@ -53,7 +53,7 @@ export async function deleteDocs(collection) {
       message: result? `${result.deletedCount} Doc(s) was/were Deleted Successfully`: 'Error, Try again later.',
     };
   } catch (err) {
-    return { error: err.message };
+    return { errors: err.message };
   }
 }
 
@@ -65,6 +65,6 @@ export async function deleteDoc(collection, id) {
       message: result? 'Deleted Successfully': 'Error, Try again later.',
     };
   } catch (err) {
-    return { error: err.message };
+    return { errors: err.message };
   }
 }

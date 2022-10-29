@@ -19,7 +19,7 @@ export default function CreateArticle() {
                 poster: article.poster,
                 topic: article.topic
             });
-            if(!result.error) router.push('/');
+            if(!result.errors) router.push('/');
         } else posterBox.current.innerHTML = 'Only Links From Unsplash Supported.';
     }
     return (

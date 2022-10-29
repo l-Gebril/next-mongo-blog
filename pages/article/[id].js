@@ -1,8 +1,16 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import axios from 'axios';
+import { useRouter } from "next/router";
 
 export default function Article({ article }) {
+  let router = useRouter();
+
+  const handleDeletion = async () => {
+    const result = await axios.delete(`/article/${router.query.id}`).then(res => res.data);
+    if(!result.errors) router.replace('/')
+  }
+
   return( 
     <>
     <Link href='/' className="float-right font-bold mr-5">
@@ -11,10 +19,10 @@ export default function Article({ article }) {
 
     <div className="max-w-[700px] mx-auto">
       <div className="pb-3">
-        <div>
-          <Link href={`/author/${article.author}`} className="bg-slate-800 text-lg w-fit text-white px-3 py-1">{article.author}</Link>
-        </div>
-        <h1 className="pt-5 text-3xl font-bold">{article.title}</h1>
+        <h1 className="bg-slate-800 text-lg w-fit text-white px-3 py-1">
+          {article.author}
+        </h1>
+        <h1 className="pt-5 text-3xl sm:text-4xl font-bold">{article.title}</h1>
       </div>
       
       <Image
@@ -28,6 +36,7 @@ export default function Article({ article }) {
         />
         
       <p className="pt-6 pb-14">{article.topic}</p>
+      <button onClick={handleDeletion} className="cursor-pointer bg-red-700 hover:bg-red-800 text-white px-5 py-2">Delete</button>
     </div>
     </>);
 }

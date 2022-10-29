@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-#__next {
-    @apply text-slate-800 font-mono bg-white grid grid-rows-[60px_1fr_60px] grid-cols-1 min-h-screen
-}

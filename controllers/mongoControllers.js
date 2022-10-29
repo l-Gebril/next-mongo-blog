@@ -1,5 +1,5 @@
-import connect from "../util/connect.js";
-connect();
+import mongoose from 'mongoose';
+mongoose.connect(process.env.MONGODB_URI);
 
 export async function findDocs(collection) {
   try {

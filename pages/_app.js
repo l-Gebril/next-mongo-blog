@@ -1,9 +1,6 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-import axios from "axios";
-
-axios.defaults.baseURL = 'https://basic-travel-blog.vercel.app/api';
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+import './api/axios.js';
 
 function MyApp({ Component, pageProps }) {
   return <Layout><Component {...pageProps} /></Layout>

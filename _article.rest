@@ -1,0 +1,67 @@
+############
+GET http://localhost:3000/api/article
+############
+GET http://localhost:3000/api/article/635d79fc84c1cd2a49d82a1f
+
+
+############
+POST http://localhost:3000/api/article
+Content-Type: application/json
+
+[
+  {
+    "title": "Stilt fishermen of Sri Lanka",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Lamiaa Gabriel",
+    "poster": "https://images.unsplash.com/photo-1548248823-ce16a73b6d49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60"
+  },
+  {
+    "title": "Stilt fishermen of Sri Lanka 2",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Yasser Ali",
+    "poster": "https://images.unsplash.com/photo-1548371836-9f0b75a62d8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "title": "Stilt fishermen of Sri Lanka 3",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Omar Sayed",
+    "poster": "https://images.unsplash.com/photo-1548413935-a7d015ff5865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "title": "Stilt fishermen of Sri Lanka 4",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Muhammed Mostafa",
+    "poster": "https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "title": "Stilt fishermen of Sri Lanka 5",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Noha Magdy",
+    "poster": "https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "title": "Stilt fishermen of Sri Lanka 4",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Mostafa Khaled",
+    "poster": "https://images.unsplash.com/photo-1548197253-652ffe79752c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "title": "Stilt fishermen of Sri Lanka 5",
+    "topic": "There is something really magical about hiking amongst the clouds in Sri Lanka. As we make our way up to a guesthouse in the tea hills, a stony path of granite crunches underfoot. We switchback through trails of purple and yellow wildflowers, trying to avoid the blades of lemongrass that lash at our legs. The mist is pea soup thick, and although it hasn't quite started to rain yet, I react to the dew as it smacks into my face like an unexpected cobweb. Most of our tour group have spread thinly along the trail. The absolute silence is deafening when you are up here in the clouds. Even my own frantic heartbeat can't drown out my hours of dreamy contemplation as I plod along. With all these temple visits, I start thinking about Buddhism and Hinduism and, although I'm not a religious person, I realize that I too by default try to live my life by being kind and behaving decently towards every other living creature while on this earth",
+    "author": "Ahmed Nagy",
+    "poster": "https://images.unsplash.com/photo-1495080600440-47b003ed9521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  }
+]
+
+############
+PUT http://localhost:3000/api/article/635d7a9784c1cd2a49d82a2e
+Content-Type: application/json
+
+{
+    "author": "Lamiaa Gabriel"
+}
+
+############
+DELETE  http://localhost:3000/api/article
+############
+DELETE  http://localhost:3000/api/article/635d042d998c8eb78b0c23d3

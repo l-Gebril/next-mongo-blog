@@ -1,9 +1,14 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
+import axios from 'axios';
 
 export default function Article({ article }) {
   return( 
     <>
+    <Link href='/' className="float-right font-bold mr-5">
+      More Articles {`-->`}
+    </Link>
+
     <div className="max-w-[700px] mx-auto">
       <div className="pb-3">
         <div>
@@ -23,16 +28,12 @@ export default function Article({ article }) {
         />
         
       <p className="pt-6 pb-14">{article.topic}</p>
-
-      <Link href='/' className="float-right font-bold">
-        More Articles {`-->`}
-      </Link>
     </div>
     </>);
 }
 
 export async function getStaticPaths() {
-  const result = await fetch('http://localhost:3000/api/article', { method: 'GET' }).then(res => res.json());
+  const result = await axios.get('/article').then(res => res.data);
   const paths = result.docs && result.docs.map(article => ({
       params: { id: article._id }
   }));
@@ -43,7 +44,8 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps(context) {
   const id = context.params.id;
-  const result = await fetch(`http://localhost:3000/api/article/${id}`, { method: 'GET' }).then(res => res.json());
+  const result = await axios.get(`/article/${id}`).then(res => res.data);
+
   return {
       props: { article: result.doc },
       revalidate: 10

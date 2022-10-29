@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
+import axios from 'axios';
 
 export default function CreateArticle() {
     const router = useRouter();
@@ -12,17 +13,12 @@ export default function CreateArticle() {
         posterBox.current.textContent = '';
         
         if(article.poster.startsWith("https://images.unsplash.com/")) {
-            const result = await fetch('/api/article', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    author: article.author,
-                    title: article.title,
-                    poster: article.poster,
-                    topic: article.topic
-                })
-            }).then(res => res.json());
-    
+            const result = await axios.post('/article', {
+                author: article.author,
+                title: article.title,
+                poster: article.poster,
+                topic: article.topic
+            });
             if(!result.error) router.push('/');
         } else posterBox.current.innerHTML = 'Only Links From Unsplash Supported.';
     }

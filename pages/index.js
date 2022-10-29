@@ -7,7 +7,7 @@ export default function Home({ articles }) {
     <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
         {
           articles.length? (articles.map((article, i) => (
-            <article key={i} className="relative bg-white text-black shadow-md rounded overflow-hidden">
+            <article key={i} className="relative bg-white text-black shadow-md rounded overflow-hidden hover:scale-[1.01] transition-all duration-300">
               <Link href={`/article/${article._id}`}>
                   <Image
                   src={article.poster}

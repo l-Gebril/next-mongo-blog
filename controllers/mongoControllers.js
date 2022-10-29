@@ -1,5 +1,8 @@
 import mongoose from 'mongoose';
-mongoose.connect(process.env.MONGODB_URI);
+mongoose
+  .connect("mongodb+srv://projects:projects@projects.z0byezk.mongodb.net/travel-blog?retryWrites=true&w=majority")
+  .then(() => console.log("Database is Connected Successfully!"))
+  .catch(() => console.log("Error in Connecting to Database"))
 
 export async function findDocs(collection) {
   try {

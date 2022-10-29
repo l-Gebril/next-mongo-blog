@@ -15,7 +15,7 @@ const Header = () => {
 }
 
 const Footer = () => {
-    return <footer className="h-[60px] flex justify-center items-center border-t border-gray-300">Coded & Developed By <Link href="/" className="hover:underline hover:text-main py-1 px-3 tranistion-all duration-300">Lamiaa Gabriel</Link> </footer>
+    return <footer className="h-[60px] flex justify-center items-center border-t border-gray-300">Coded & Developed By <Link href="https://github.com/lamiaagabriel" target='_blank' className="hover:underline hover:text-main py-1 px-3 tranistion-all duration-300">Lamiaa Gabriel</Link> </footer>
 }
 const Layout = ({ children }) => {
     return (

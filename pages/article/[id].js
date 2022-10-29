@@ -11,8 +11,7 @@ export default function Article({ article }) {
     if(!result.errors) router.replace('/')
   }
 
-  return( 
-    <>
+  return article && (<>
     <Link href='/' className="float-right font-bold mr-5">
       More Articles {`-->`}
     </Link>
